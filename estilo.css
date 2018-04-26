@@ -1,17 +1,17 @@
 *{margin: 0;padding: 0;box-sizing: border-box; font-family: sans-serif;font-size:16px;}
 html{font-size:16px}
-body{ background-color: #dds }
+body{ background-color:  #ebebe0 }
 .nav-bar{display: flex; background-color: #ff8000; height: 100px; width:100%;justify-content: space-between;}
 .logo img { height: 100px; }
 .logoM img {display: none; height: 50px;}
 .nav-items ul {position: relative;right: 10vh;top:30px;}
 .nav-items li {display: inline-block; padding: 10px;}
 .nav-items .listacorta  {display: none;}
-.autos { font-size:0; background-color:#ddd;  padding:10px 0;max-width: 1920px;margin: 0 auto;}
+.autos { font-size:0; ;  padding:10px 0;max-width: 1920px;margin: 0 auto;width: 90%;margin: 0 auto; border-radius: 10px;}
 .auto {padding: 10px; background-color:#dgl }
-.autos .auto {display:inline-block;width:33.33%;padding:5px;box-sizing:border-box;position:relative;border:1px solid #0000003d;border-radius: 20px;}
-.autos .auto .imagen {;overflow:hidden;}
-.autos .auto .imagen img {width:100%;height:250px;border-radius: 20px; padding:0 10px;}
+.autos .auto {display:inline-block;width:33%;padding:5px;box-sizing:border-box;position:relative;border:7px solid  #ebebe0;border-radius: 20px;background-color:#ffffff}
+.autos .auto .imagen {overflow:hidden;}
+.autos .auto .imagen img {width:100%;height:250px;border-radius: 15px; }
 .autos .auto h3 {font-size:1.5rem;color:green;text-align:center;}
 .autos .auto .banderin {width:30px;height:30px;position:absolute;top:10px;right:25px;background-color:red;border-radius: 20px;}
 .autos .auto p {font-size:1rem;}
@@ -21,11 +21,13 @@ body{ background-color: #dds }
 
 
 
+@media (min_width:1000px) { .auto .autos :nth-child(2n+2){margin: 2 auto;}
 
-@media (max-width:1000px) {.autos .auto {width:50%;}}
+}
+@media (max-width:1200px) {.autos .auto {width:50%;}}
 @media (max-width:700px) {.autos .auto {width:100%;display:block;}}
 @media (max-width:800px) {.nav-items li{display: none}}
 @media (max-width:800px) {.nav-items .listacorta{display: block;  position: absolute;font-size: 40px;right: 10%;}
-@media (max-width:1000px) {.logoM img{display: flex;}
-@media (max-width:1000px) {.logo img{display: none;}
-@media (max-width:1000px) {.nav-bar{height: 70px;}}
+@media (max-width:1200px) {.logoM img{display: flex;}
+@media (max-width:1200px) {.logo img{display: none;}
+@media (max-width:1200px) {.nav-bar{height: 70px;}}
