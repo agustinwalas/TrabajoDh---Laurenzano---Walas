@@ -11,18 +11,12 @@ body{ background-color:  #ebebe0 }
 .searchbar .barra {width: 150%;font-size: 20px;border-top-right-radius:20px; border-bottom-right-radius:20px;}
 .searchbar img {position: absolute;left:-25px;top:-4px;height: 36px;width:29px;  }
 .nav-items .listacorta  {display: none;}
-form{top:500px;}
-.logeo {width: 90%; margin:0 auto;padding-top: 15px;}
-.item {font-size: 1.5rem; }
-.item2{font-size:1.25rem;}
-fieldset{padding: 20px;background-color:#ff8000;border-radius: 20px;width: 85%;}
-fieldset p {margin: 10px;}
-.desplegable{font-size: 25px;}
-legend{font-size: 25px;text-align:center;text-decoration: underline;}
+h1 {font-size: 45px;margin-bottom: 50px;}
+h2 {font-size: 30px;margin: 10px; border: 2px solid #ff8000;border-radius: 20px;background-color: #ff8777;text-align: center;}
+.preguntas{padding-top: 50px; width: 50%;margin: 0 auto;}
 
 
-
-
+@media (max-width:768px) {h1{font-size: 30px;}h2{font-size: 20px} .preguntas{width: 80%}}
 @media (max-width:950px) {.searchbar{display: none}}
 @media (max-width:800px) {.nav-items ul{display: none}}
 @media (max-width:800px) {.nav-items .listacorta{display: block;  position: absolute;font-size: 40px;right: 10%;top:5px;}
@@ -36,13 +30,4 @@ legend{font-size: 25px;text-align:center;text-decoration: underline;}
 
 
 
-
-
-form{top:500px;}
-
-.logeo {width: 90%; margin:0 auto;padding-top: 15px;}
-.item {font-size: 1.5rem; }
-.item2{font-size:1.25rem;}
-fieldset{padding: 20px;background-color:#ff8000}
-.desplegable{font-size: 25px;}
-legend{font-size: 25px;text-align:center;text-decoration: underline;}
+}
