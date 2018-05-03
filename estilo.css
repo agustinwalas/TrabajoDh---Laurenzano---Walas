@@ -5,7 +5,10 @@ body{ background-color:  #ebebe0 }
 .logo img { height: 100px; }
 .logoM img {display: none; height: 50px;}
 .nav-items ul {position: relative;right: 10vh;top:30px;}
-.nav-items li {display: inline-block; padding: 10px;}
+.nav-items li {display: inline-block; padding: 10px;font-size: 20px;}
+.searchbar {margin-left: 0;margin-right: 0;position: absolute; left:30%;top:37px}
+.searchbar .barra {font-size: 20px;border-top-right-radius:20px; border-bottom-right-radius:20px;}
+.searchbar img {position: absolute;left:-25px;top:-4px;height: 36px;width:29px;  }
 .nav-items .listacorta  {display: none;}
 .autos { font-size:0; ;  padding:10px 0;max-width: 1920px;margin: 0 auto;width: 90%;margin: 0 auto; border-radius: 10px;}
 .auto {padding: 10px; background-color:#dgl }
@@ -13,15 +16,18 @@ body{ background-color:  #ebebe0 }
 .autos .auto .imagen {overflow:hidden;}
 .autos .auto .imagen img {width:100%;height:250px;border-radius: 15px; }
 .autos .auto h3 {font-size:1.5rem;color:green;text-align:center;}
-.autos .auto .banderin {width:30px;height:30px;position:absolute;top:10px;right:25px;background-color:red;border-radius: 20px;}
-.autos .auto p {font-size:1rem;}
+.autos .auto .banderin {width:30px;height:30px;position:absolute;top:10px;right:25px;border-radius: 20px;}
+.autos .auto .banderin img {position: relative; width: 70px;right: 20px;}
+.autos .auto p {text-align:center;}
 .datos-secundarios{margin: 0 auto;}
 .datos-secundarios li{display: inline-block; padding: 10px;}
 
 
 
 
-@media (min_width:1000px) { .auto .autos :nth-child(2n+2){margin: 2 auto;}
+
+
+@media (max-width:850px) {.searchbar{display: none}}
 
 }
 @media (max-width:1200px) {.autos .auto {width:50%;}}
