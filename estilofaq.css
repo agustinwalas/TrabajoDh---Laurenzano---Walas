@@ -14,6 +14,9 @@ body{ background-color:  #ebebe0 }
 h1 {font-size: 45px;margin-bottom: 50px;}
 h2 {font-size: 30px;margin: 10px; border: 2px solid #ff8000;border-radius: 20px;background-color: #ff8777;text-align: center;}
 .preguntas{padding-top: 50px; width: 50%;margin: 0 auto;}
+h2:hover { 
+    background-color: yellow;
+}
 
 
 @media (max-width:768px) {h1{font-size: 30px;}h2{font-size: 20px} .preguntas{width: 80%}}
