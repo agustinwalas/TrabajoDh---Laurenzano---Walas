@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <link rel="stylesheet" href="estilolog.css">
+    <link rel="stylesheet" href="estilologreg.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -11,7 +11,7 @@
     <header>
       <div class="nav-bar">
          <div class="logo">
-           <a href="TrabajoDH.html"></a>
+           <a href="TrabajoDH.php"></a>
            <img src="logo.png" alt="">
          </div>
          <div class="logoM">
@@ -19,9 +19,9 @@
          </div>
          <div class="nav-items">
            <ul>
-             <li> <a href="login.html">Log In</a> </li>
-             <li> <a href="FAQ.html">Faq</a> </li>
-             <li> <a href="TrabajoDH.html">Inicio</a> </li>
+             <li> <a href="login.php">Log In</a> </li>
+             <li> <a href="FAQ.php">Faq</a> </li>
+             <li> <a href="TrabajoDH.php">Inicio</a> </li>
            </ul>
           <div class="listacorta">
               <i style="font-size:24px" class="fa">&#xf0c9;</i>
@@ -67,10 +67,13 @@
 
            </select>
       </label> </p>
-       <p> <label class="item2"> Masculino <input type="radio" name="genero"> </input> </label>
-           <label class="item2">Femenino <input type="radio" name="genero">  </input> </label>
-       </p>
-        <p><input style="width:100px;height:25px" type="submit" value="ENVIAR"></p>
+      <p> <label class="item"> Sexo: <select class="desplegable" name="Pq_Consulta">
+           <option value="Suscripcion">Masculino </option>
+           <option value="Suscripcion">Femenino </option>
+           <option value="Suscripcion">Otros </option>
+         </select>
+    </label> </p>
+        <p><input class="submit" style="width:120px;height:35px" type="submit" value="ENVIAR"></p>
       </fieldset>
     </form>
     </div>

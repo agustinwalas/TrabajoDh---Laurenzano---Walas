@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <link rel="stylesheet" href="estilolog.css">
+    <link rel="stylesheet" href="estilologreg.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -11,7 +11,7 @@
     <header>
       <div class="nav-bar">
          <div class="logo">
-           <a href="TrabajoDH.html"></a>
+           <a href="TrabajoDH.php"></a>
            <img src="logo.png" alt="">
          </div>
          <div class="logoM">
@@ -19,9 +19,9 @@
          </div>
          <div class="nav-items">
            <ul>
-             <li> <a href="register.html">Register</a> </li>
-              <li> <a href="FAQ.html">Faq</a> </li>
-             <li> <a href="TrabajoDH.html">Inicio</a> </li>
+             <li> <a href="register.php">Registrate</a> </li>
+              <li> <a href="FAQ.php">Faq</a> </li>
+             <li> <a href="TrabajoDH.php">Inicio</a> </li>
            </ul>
           <div class="listacorta">
               <i style="font-size:24px" class="fa">&#xf0c9;</i>

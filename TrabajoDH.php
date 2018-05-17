@@ -22,9 +22,9 @@
      </div>
          <div class="nav-items">
            <ul>
-             <li> <a href="login.html">Login</a> </li>
-             <li> <a href="register.html">Registrate</a> </li>
-             <li> <a href="FAQ.html">Faq</a> </li>
+             <li> <a href="login.php">Login</a> </li>
+             <li> <a href="register.php">Registrate</a> </li>
+             <li> <a href="FAQ.php">Faq</a> </li>
            </ul>
           <div class="listacorta">
               <i style="font-size:24px" class="fa">&#xf0c9;</i>
