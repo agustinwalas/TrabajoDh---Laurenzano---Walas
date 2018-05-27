@@ -1,3 +1,4 @@
+<?php require_once('funciones.php') ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -11,17 +12,17 @@
     <header>
       <div class="nav-bar">
          <div class="logo">
-           <img src="logo.png" alt="">
+           <a href="index.php"><img src="logo.png"></a>
          </div>
          <div class="logoM">
-           <img src="logo-mini.png" alt="">
+           <a href="index.php"><img src="logo-mini.png"></a>
          </div>
          <div class="searchbar">
        <input class="barra"type="text" placeholder="     buscar..">
        <img src="zoom1.png" alt="">
      </div>
          <div class="nav-items">
-           <ul>
+            <ul>
              <li> <a href="login.php">Login</a> </li>
              <li> <a href="register.php">Registrate</a> </li>
              <li> <a href="FAQ.php">Faq</a> </li>
@@ -154,5 +155,9 @@
         </div>
       </div>
     </div>
+    <footer>
+<hr>
+    <a href="logout.php">Cerrar Sesion</a>
+    </footer>
   </body>
 </html>

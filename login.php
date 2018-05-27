@@ -1,3 +1,4 @@
+<?php require_once('funciones.php') ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -12,16 +13,16 @@
       <div class="nav-bar">
          <div class="logo">
            <a href="TrabajoDH.php"></a>
-           <img src="logo.png" alt="">
+           <a href="index.php"><img src="logo.png"></a>
          </div>
          <div class="logoM">
-           <img src="logo-mini.png" alt="">
+           <a href="index.php"><img src="logo-mini.png"></a>
          </div>
          <div class="nav-items">
            <ul>
              <li> <a href="register.php">Registrate</a> </li>
               <li> <a href="FAQ.php">Faq</a> </li>
-             <li> <a href="TrabajoDH.php">Inicio</a> </li>
+             <li> <a href="index.php">Inicio</a> </li>
            </ul>
           <div class="listacorta">
               <i style="font-size:24px" class="fa">&#xf0c9;</i>
@@ -31,18 +32,63 @@
       </div>
     </header>
   <div class="logeo">
-    <form class=""  method="post">
-    <fieldset>
-       <strong><legend>Ingresa</legend></strong>
-       <br>
-       <br>
-       <p> <label class="item"> Usuario: <input class="desplegable" type="text" name="usuario"> </label> </p>
-       <p> <label class="item"> Contraseña: <input class="desplegable" type="password" name="contraseña"> </label> </p>
-       <p> <a href="register.html">olvidaste tu contraseña?</a> </p>
-        <p><input style="width:100px;height:25px" type="submit" value="ENVIAR"></p>
-      </fieldset>
+    <?php
+
+    if (estaLogueado()) {
+        header('location:felicidades.php');
+    }
+
+    $email = '';
+    $errores = [];
+
+    if ($_POST) {
+        $email = trim($_POST['email']);
+
+        $errores = validarLogin($_POST);
+
+        if (empty($errores)) {
+            $user = existeEmail($email);
+
+            if (isset($_POST['recordarme'])) {
+                setcookie('id', $user['id'], time() + 3600 * 24 * 30 );
+            }
+
+            loguear($user);
+        }
+
+    }
+
+     ?>
+     <br>
+     <br>
+    <form style="text-align:center;"  method="post" enctype="multipart/form-data">
+        <label for="">email</label>
+        <input type="text" name="email" value="<?=$email?>">
+        <br>
+        <br>
+        <label for="">pass</label>
+        <input type="text" name="pass" value="">
+        <br>
+        <br>
+        <label for="">Recordarme</label>
+        <input type="checkbox" name="recordarme">
+        <br>
+        <br>
+        <button type="submit">Loguearse</button>
     </form>
-    </div>
+
+    <?php if (!empty($errores)): ?>
+        <ul style="color:red;">
+            <?php foreach ($errores as $key => $error): ?>
+                 <li><?=$error?></li>
+                 <br>
+            <?php endforeach; ?>
+        </ul>
+    <?php endif; ?>
+
+    <hr>
+
+    <p>No tenés usuario ? <a href="registrarse.php">Registrate</a> </p>
 
 
 

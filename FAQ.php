@@ -11,10 +11,10 @@
     <header>
       <div class="nav-bar">
          <div class="logo">
-           <img src="logo.png" alt="">
+           <a href="index.php"><img src="logo.png"></a>
          </div>
          <div class="logoM">
-           <img src="logo-mini.png" alt="">
+           <a href="index.php"><img src="logo-mini.png"></a>
          </div>
          <div class="searchbar">
        <input class="barra"type="text" placeholder="     buscar..">
@@ -24,7 +24,7 @@
            <ul>
              <li> <a href="login.php">Login</a> </li>
              <li> <a href="register.php">Registrate</a> </li>
-             <li> <a href="TrabajoDH.php">Inicio</a> </li>
+             <li> <a href="index.php">Inicio</a> </li>
            </ul>
           <div class="listacorta">
               <i style="font-size:24px" class="fa">&#xf0c9;</i>
