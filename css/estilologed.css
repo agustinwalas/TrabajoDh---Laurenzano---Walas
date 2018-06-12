@@ -1,28 +1,18 @@
+.contenedor{width:50%;background-color: #ddd; margin: 0 auto; border: solid black;border-radius: 10px;padding: 20px; margin-top: 100px;}
 *{margin: 0;padding: 0;box-sizing: border-box; font-family: sans-serif;font-size:16px;}
-A:link {text-decoration:none;color:#fff;font-family: "Comic Sans MS", cursive, sans-serif;font-size: 1.2rem}
-A:link {text-decoration:none;color:#fff;font-family: "Comic Sans MS", cursive, sans-serif}
-A:visited {text-decoration:none;color:#fff;font-family: "Comic Sans MS", cursive, sans-serif}
-A:active {text-decoration:none;color:#fff;font-family: "Comic Sans MS", cursive, sans-serif}
 html{font-size:16px}
+.logo img:hover { opacity: 0.5}
 body{ background-color:  #ebebe0 }
 .nav-bar{display: flex; background-color: #ff8000; height: 100px; width:100%;justify-content: space-between;}
 .logo img { height: 100px; }
 .logoM img {display: none; height: 50px;}
 .nav-items ul {position: relative;right: 10vh;top:30px;}
 .nav-items ul li  {display: inline-block; padding: 10px;font-size: 20px;}
-
-.nav-items ul li  {display: inline-block; padding: 10px;font-size: 20px;font-}
-.nav-items ul li:hover{  box-sizing: border-box;  background-color: #DF7401;  padding-bottom: 5px;  border-bottom: 2px solid white;border-top-left-radius: 10px;border-top-right-radius: 10px;}
+.nav-items li a {}
 .searchbar {margin-left: 0;margin-right: 0;position: absolute; left:30%;top:37px}
 .searchbar .barra {width: 150%;font-size: 20px;border-top-right-radius:20px; border-bottom-right-radius:20px;}
 .searchbar img {position: absolute;left:-25px;top:-4px;height: 36px;width:29px;  }
 .nav-items .listacorta  {display: none;}
-h1 {font-size: 45px;margin-bottom: 50px;}
-h2 {font-size: 30px;margin: 10px; border: 2px solid #ff8000;border-radius: 20px;background-color: #ff8777;text-align: center;}
-.preguntas{padding-top: 50px; width: 50%;margin: 0 auto;}
-h2:hover {
-    background-color: yellow;
-}
 
 
 @media (max-width:768px) {h1{font-size: 30px;}h2{font-size: 20px} .preguntas{width: 80%}}
@@ -34,9 +24,3 @@ h2:hover {
 @media (max-width:1200px) {.nav-bar{height: 70px;}}
 @media (max-width:950px) {.searchbar{display: none}}
 @media (max-width:1200px) { .autos .auto {width:50%;} .logoM img{display: flex;} .logo img{display: none;} .nav-bar{height: 70px;}}
-
-
-
-
-
-}

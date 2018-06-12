@@ -2,7 +2,8 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <link rel="stylesheet" href="estilologreg.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilolog.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -12,18 +13,14 @@
     <header>
       <div class="nav-bar">
          <div class="logo">
-           <a href="TrabajoDH.php"></a>
-           <a href="index.php"><img src="logo.png"></a>
+           <a href="index.php"></a>
+           <a href="index.php"><img src="diseño/logo.png"></a>
          </div>
          <div class="logoM">
-           <a href="index.php"><img src="logo-mini.png"></a>
+           <a href="index.php"><img src="diseño/logo-mini.png"></a>
          </div>
          <div class="nav-items">
-           <ul>
-             <li> <a href="register.php">Registrate</a> </li>
-              <li> <a href="FAQ.php">Faq</a> </li>
-             <li> <a href="index.php">Inicio</a> </li>
-           </ul>
+
           <div class="listacorta">
               <i style="font-size:24px" class="fa">&#xf0c9;</i>
 
@@ -35,7 +32,7 @@
     <?php
 
     if (estaLogueado()) {
-        header('location:felicidades.php');
+        header('location:logeado.php');
     }
 
     $email = '';
@@ -59,22 +56,16 @@
     }
 
      ?>
-     <br>
-     <br>
-    <form style="text-align:center;"  method="post" enctype="multipart/form-data">
-        <label for="">email</label>
-        <input type="text" name="email" value="<?=$email?>">
-        <br>
-        <br>
-        <label for="">pass</label>
-        <input type="text" name="pass" value="">
-        <br>
-        <br>
-        <label for="">Recordarme</label>
-        <input type="checkbox" name="recordarme">
-        <br>
-        <br>
-        <button type="submit">Loguearse</button>
+<form style="text-align:center;"  method="post" enctype="multipart/form-data" class="conteiner">
+     <div class="form-group">
+       <label for="usr">Mail:</label>
+       <input type="email" name="email" class="form-control" value="<?=$email?>">
+     </div>
+     <div class="form-group">
+       <label for="pwd">contraseña:</label>
+       <input type="password" name="pass" class="form-control" value="">
+     </div>
+        <button type="submit" class="btn btn-success">Ingresar</button>
     </form>
 
     <?php if (!empty($errores)): ?>
@@ -88,7 +79,7 @@
 
     <hr>
 
-    <p>No tenés usuario ? <a href="registrarse.php">Registrate</a> </p>
+    <p>¿No tenés usuario? <a href="register.php">Registrate</a> </p>
 
 
 

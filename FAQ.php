@@ -1,7 +1,8 @@
 <!DOCTYPE html>
+<?php require_once('funciones.php') ?>
 <html lang="en" dir="ltr">
   <head>
-    <link rel="stylesheet" href="estilofa.css">
+    <link rel="stylesheet" href="css/estilofaq.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -11,21 +12,24 @@
     <header>
       <div class="nav-bar">
          <div class="logo">
-           <a href="index.php"><img src="logo.png"></a>
+           <a href="index.php"><img src="diseño/logo.png"></a>
          </div>
          <div class="logoM">
-           <a href="index.php"><img src="logo-mini.png"></a>
+           <a href="index.php"><img src="diseño/logo-mini.png"></a>
          </div>
          <div class="searchbar">
        <input class="barra"type="text" placeholder="     buscar..">
-       <img src="zoom1.png" alt="">
+       <img src="diseño/zoom1.png" alt="">
      </div>
          <div class="nav-items">
-           <ul>
-             <li> <a href="login.php">Login</a> </li>
-             <li> <a href="register.php">Registrate</a> </li>
-             <li> <a href="index.php">Inicio</a> </li>
-           </ul>
+           <?php if (!estaLogueado()) {?>
+             <ul>
+              <li> <a href="login.php">Login</a> </li>
+              <li> <a href="register.php">Registrate</a> </li>
+
+            </ul>
+          <?php }
+           ?>
           <div class="listacorta">
               <i style="font-size:24px" class="fa">&#xf0c9;</i>
           </div>

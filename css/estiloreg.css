@@ -1,6 +1,7 @@
 *{margin: 0;padding: 0;box-sizing: border-box; font-family: sans-serif;font-size:16px;}
 html{font-size:16px}
-body{ background-color:  #ebebe0 }
+.logo img:hover { opacity: 0.5}
+body{ background-color:  #ebebe0; margin: 0 auto;}
 .nav-bar{display: flex; background-color: #ff8000; height: 100px; width:100%;justify-content: space-between;}
 .logo img { height: 100px; }
 .logoM img {display: none; height: 50px;}
@@ -11,38 +12,18 @@ body{ background-color:  #ebebe0 }
 .searchbar .barra {width: 150%;font-size: 20px;border-top-right-radius:20px; border-bottom-right-radius:20px;}
 .searchbar img {position: absolute;left:-25px;top:-4px;height: 36px;width:29px;  }
 .nav-items .listacorta  {display: none;}
-form{top:500px;}
-.logeo {width: 90%; margin:0 auto;padding-top: 15px;}
-.item {font-size: 1.5rem; }
-.item2{font-size:1.25rem;}
-fieldset{padding: 20px;background-color:#ff8000;border-radius: 20px;width: 85%;}
-fieldset p {margin: 10px;}
-.desplegable{font-size: 25px;}
-legend{font-size: 25px;text-align:center;text-decoration: underline;}
+.conteiner{width: 50%;margin: 0 auto;padding-top: 80px;}
+.footer{width: 50%;margin: 0 auto;}
+
+.error-conteiner{width: 50%;margin: 0 auto;margin-top: 30px;}
 
 
 
-
-@media (max-width:950px) {.searchbar{display: none}}
-@media (max-width:800px) {.nav-items ul{display: none}}
+@media (max-width:950px) {.searchbar{display: none} .conteiner{width: 60%;margin: 0 auto;padding-top: 95px;}}
+@media (max-width:800px) {.nav-items ul{display: none} .conteiner{width: 70%;margin: 0 auto;padding-top: 95px;}}
 @media (max-width:800px) {.nav-items .listacorta{display: block;  position: absolute;font-size: 40px;right: 10%;top:5px;}
 @media (max-width:1200px) {.logoM img{display: flex;}
 @media (max-width:1200px) {.logo img{display: none;}
 @media (max-width:1200px) {.nav-bar{height: 70px;}}
 @media (max-width:950px) {.searchbar{display: none}}
 @media (max-width:1200px) { .autos .auto {width:50%;} .logoM img{display: flex;} .logo img{display: none;} .nav-bar{height: 70px;}}
-
-
-
-
-
-
-
-form{top:500px;}
-
-.logeo {width: 90%; margin:0 auto;padding-top: 15px;}
-.item {font-size: 1.5rem; }
-.item2{font-size:1.25rem;}
-fieldset{padding: 20px;background-color:#ff8000}
-.desplegable{font-size: 25px;}
-legend{font-size: 25px;text-align:center;text-decoration: underline;}
