@@ -1,4 +1,4 @@
-<?php require_once('funciones.php') ?>
+<?php require_once('required.php') ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -31,7 +31,7 @@
   <div class="logeo">
     <?php
 
-    if (estaLogueado()) {
+    if ($autenticador->estaLogueado()) {
         header('location:logeado.php');
     }
 
@@ -44,13 +44,15 @@
         $errores = validarLogin($_POST);
 
         if (empty($errores)) {
-            $user = existeEmail($email);
+            $user = $repositorio->existeEmail($email);
 
             if (isset($_POST['recordarme'])) {
                 setcookie('id', $user['id'], time() + 3600 * 24 * 30 );
             }
-
-            loguear($user);
+            $usuarioL = new ciennumeros\Clases\Usuario($usuario);
+            $usuarioL->setId($usuario['id']);
+            $autenticador->logear($usuarioObj);
+          exit;
         }
 
     }

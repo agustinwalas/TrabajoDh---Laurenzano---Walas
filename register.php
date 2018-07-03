@@ -1,5 +1,5 @@
 <?php
-require_once('funciones.php') ?>
+require_once('required.php') ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -32,7 +32,7 @@ require_once('funciones.php') ?>
       </div>
     </header>
     <?php
-    if (estaLogueado()) {
+    if ($autenticador->estaLogueado()) {
         header('location:logeado.php');
     }
 
@@ -55,9 +55,11 @@ require_once('funciones.php') ?>
             $errores = guardarFoto('avatar',$usuario['email'] );
 
             if (count($errores) == 0) {
-                guardarUsuario($usuario);
-                header('location:logeado.php');
-                exit;
+
+              $usuario = new rapiautos\Class\Usuario($_POST);
+              $repositorio->guardarUsuario($usuario);
+              $autenticador->logear($usuario);
+
             }
 
 
@@ -127,7 +129,7 @@ require_once('funciones.php') ?>
 
 
 <div class="footer">
-    <hr> 
+    <hr>
   Ya tengo usuario <div class="yatiene"> <a href="login.php">Logeate</a> </div>
 </div>
 

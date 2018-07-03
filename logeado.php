@@ -1,4 +1,4 @@
-<?php require_once('funciones.php') ?>
+<?php require_once('required.php') ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <link rel="stylesheet" href="css/estilologed.css">
@@ -33,7 +33,7 @@
 
         <pre>
         <?php
-        if (!estaLogueado()) {
+        if (!$autenticador->estaLogueado()) {
             header('location:index.php');
         }
 

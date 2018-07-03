@@ -1,0 +1,41 @@
+*{margin: 0;padding: 0;box-sizing: border-box; font-family: sans-serif;font-size:16px;}
+html{font-size:16px;#f2f2f2}
+body{ background-color:  #ebebe0;overflow-x:hidden; }
+.nav-bar{display: flex; background-color: #ff8000; height: 100px; width:100%;justify-content: space-between;}
+.logo img { height: 100px; }
+.logo img:hover { opacity: 0.5}
+.logoM img {display: none; height: 50px;}
+.nav-items ul {position: relative;right: 3vh;top:30px;}
+.nav-ul li A:link {text-decoration:none;color:#fff;font-family: "Comic Sans MS", cursive, sans-serif;font-size: 1.2rem}
+.nav-ul li A:link {text-decoration:none;color:#fff;font-family: "Comic Sans MS", cursive, sans-serif}
+.nav-ul li A:visited {text-decoration:none;color:#fff;font-family: "Comic Sans MS", cursive, sans-serif}
+.nav-ul li A:active {text-decoration:none;color:#fff;font-family: "Comic Sans MS", cursive, sans-serif}
+.nav-items ul li  {display: inline-block; padding: 10px;font-size: 20px;font-}
+.nav-items ul li:hover{  box-sizing: border-box;  background-color: #DF7401;  padding-bottom: 5px;  border-bottom: 2px solid white;border-top-left-radius: 10px;border-top-right-radius: 10px;}
+.searchbar {margin-left: 0;margin-right: 0;position: absolute; left:30%;top:37px}
+.searchbar .barra {width: 150%;font-size: 20px;border-top-right-radius:20px; border-bottom-right-radius:20px;}
+.searchbar img {position: absolute;left:-26px;top:-3px;height: 41px;width:30px;  }
+.nav-items .listacorta  {display: none;}
+.autos { font-size:0; ;  padding:10px 0;max-width: 1920px;margin: 0 auto;width: 90%;margin: 0 auto; border-radius: 10px;}
+.auto {padding: 10px; background-color:#dgl;margin-top:50px;}
+.final{margin-top: 20px;padding-top: 20px;border-top: 1px solid #ff8000;width: 90%;margin: 0 auto;}
+.final a {padding-top: 20px;padding-bottom: 30px;padding: 30px;}
+.final a:link {text-decoration:none;color:#cc6600	;font-family: "Comic Sans MS", cursive, sans-serif;font-size: 1.2rem}
+.final a:active{text-decoration:none;color:#cc6600	;font-family: "Comic Sans MS", cursive, sans-serif;font-size: 1.2rem}
+.final a:visited{text-decoration:none;color:#cc6600	;font-family: "Comic Sans MS", cursive, sans-serif;font-size: 1.2rem}
+.pagination{margin-top: 30px;margin-left: 40%;margin-bottom: 30px;}
+.datos-secundarios {display: flex; justify-content: space-between;width: 80%}
+.producto{margin: 0 auto;width: 80%;padding: 30px; margin-top: 30px;}
+h3{padding-top: 30px;padding-bottom: 30px;}
+h1{padding-top: 30px;}
+.btn-success{margin-top: 20px;  }
+.title{width: 70%;}
+.precio{width: 10}
+
+
+
+@media (max-width:950px) {.searchbar .barra{display: none} .searchbar img {position: absolute; left: -90px;top: -23px;}}
+@media (max-width:950px) {.nav-items .listacorta{display: block;  position: absolute;font-size: 40px;right: 10%;top:5px;}}
+@media (max-width:950px) {.nav-items ul{display: none} }
+@media (max-width:950px) {.nav-items .listacorta{display: block;  position: absolute;font-size: 40px;right: 10%;top:5px;}.producto{width: 95%};}
+@media (max-width:950px) {.logoM img{display: flex;}.logo img{display: none;}.nav-bar{height: 70px;}}

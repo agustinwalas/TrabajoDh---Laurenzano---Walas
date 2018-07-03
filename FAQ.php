@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<?php require_once('funciones.php') ?>
+<?php require_once('required.php') ?>
 <html lang="en" dir="ltr">
   <head>
     <link rel="stylesheet" href="css/estilofaq.css">

@@ -1,9 +1,4 @@
-
-
-<!-- {Hubo un problema con el pusheo al git, pensamos que se habia mandado, comenzando el sprint 3 nos dimos cuenta que no se habia pusheado, disculpen las molestias} -->
-
-
-<?php require_once('funciones.php') ?>
+<?php require_once('required.php') ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -28,7 +23,7 @@
        <img src="diseño/zoom1.png" alt="">
      </div>
          <div class="nav-items">
-            <?php if (!estaLogueado()) {?>
+            <?php if (!$autenticador->estaLogueado()) {?>
               <ul class="nav-ul">
                <li> <a href="login.php">Login</a> </li>
                <li> <a href="register.php">Registrate</a> </li>
