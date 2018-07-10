@@ -21,12 +21,12 @@ class Repositorio{
   public function guardarUsuario($usuario){
 
       $consulta = $this->database->prepare("INSERT into usuarios
-        (nombre, apellido, email, direccion, pass)
+        (contrasenia, email, nombre, provincia)
          values(:nombre, :email, :provincia, :pass)");
       $consulta->bindValue(":nombre", $usuario->getNombre());
       $consulta->bindValue(":email", $usuario->getEmail());
       $consulta->bindValue(":provincia", $usuario->getprovincia());
-      $consulta->bindValue(":pass", $usuario->getPass());
+      $consulta->bindValue(":contrasenia", $usuario->getPass());
       $consulta->execute();
 
   	}
@@ -85,7 +85,7 @@ public function traerUltimoID(){
       $estadoConsulta->bindValue(':id', $id);
       $estadoConsulta->execute();
       $usuarioArray = $estadoConsulta->fetch();
-      $usuario = new sprint3\Clases\Usuario($usuarioArray);
+      $usuario = new sprint3\Class\usuario($usuarioArray);
       return $usuario;
     }
 

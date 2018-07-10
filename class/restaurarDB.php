@@ -13,17 +13,16 @@ class new_db
  {
 
  $crear_db = $this->pdo->query('CREATE DATABASE IF NOT EXISTS rapiautos COLLATE utf8_spanish_ci');
- $use_db = $this->pdo->query('USE 100numerosdb');
+ $use_db = $this->pdo->query('USE rapiautos');
 
  $crear_tabla_usuarios = $this->pdo->query('
  CREATE TABLE IF NOT EXISTS usuarios (
 
     `id` int(15) NOT NULL AUTO_INCREMENT,
-    `nombre` varchar(40) NOT NULL,
+    `contrasenia` varchar(40) NOT NULL,
     `email` varchar(60) NOT NULL,
-    `provincia` varchar(100) NOT NULL,
-    `imagen` varchar(100) DEFAULT NULL,
-    `pass` varchar(200) NOT NULL,
+    `nombre` varchar(100) NOT NULL,
+    `provincia` varchar(100) DEFAULT NULL,
     PRIMARY KEY (`id`),
     UNIQUE KEY `email` (`email`),
 

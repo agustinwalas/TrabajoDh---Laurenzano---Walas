@@ -47,12 +47,12 @@ require_once('required.php') ?>
         $email = trim($_POST['email']);
         $provincia = $_POST['provincia'];
 
-        $errores = validar($_POST,'avatar');
+        $errores = $autenticador->validar($_POST,'avatar');
 
         if (empty($errores)) {
-            $usuario = crearUsuario($_POST);
+            $usuario = $repositorio->crearUsuario($_POST);
 
-            $errores = guardarFoto('avatar',$usuario['email'] );
+            $errores = $repositorio->guardarFoto('avatar',$usuario['email'] );
 
             if (count($errores) == 0) {
 
@@ -92,7 +92,7 @@ require_once('required.php') ?>
               <div class="item">
               <label for="">Provincia:</label>
               <select class="" name="provincia">
-              <option value="">Elegí tu provincia</option>
+              <option value="<?=$provincia?>">Elegí tu provincia</option>
           <?php foreach ($provincias as $value): ?>
               <?php if ($provincia == $value): ?>
                   <option selected value="<?=$value?>"><?=$value?></option>

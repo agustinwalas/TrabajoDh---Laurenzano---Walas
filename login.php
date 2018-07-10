@@ -49,13 +49,12 @@
             if (isset($_POST['recordarme'])) {
                 setcookie('id', $user['id'], time() + 3600 * 24 * 30 );
             }
-            $usuarioL = new ciennumeros\Clases\Usuario($usuario);
+            $usuarioL = new rapiautos\class\Usuario($usuario);
             $usuarioL->setId($usuario['id']);
             $autenticador->logear($usuarioObj);
           exit;
         }
-
-    }
+        }
 
      ?>
 <form style="text-align:center;"  method="post" enctype="multipart/form-data" class="conteiner">
