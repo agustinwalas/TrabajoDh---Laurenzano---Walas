@@ -21,12 +21,12 @@ class Repositorio{
   public function guardarUsuario($usuario){
 
       $consulta = $this->database->prepare("INSERT into usuarios
-        (contrasenia, email, nombre, provincia)
+        (pass, email, nombre, provincia)
          values(:nombre, :email, :provincia, :pass)");
       $consulta->bindValue(":nombre", $usuario->getNombre());
       $consulta->bindValue(":email", $usuario->getEmail());
       $consulta->bindValue(":provincia", $usuario->getprovincia());
-      $consulta->bindValue(":contrasenia", $usuario->getPass());
+      $consulta->bindValue(":pass", $usuario->getPass());
       $consulta->execute();
 
   	}

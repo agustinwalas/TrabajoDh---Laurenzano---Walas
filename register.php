@@ -56,7 +56,7 @@ require_once('required.php') ?>
 
             if (count($errores) == 0) {
 
-              $usuario = new rapiautos\Class\Usuario($_POST);
+              $usuario = new rapiautos\class\usuario($_POST);
               $repositorio->guardarUsuario($usuario);
               $autenticador->logear($usuario);
 
